@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spotify/view/album_view/album_view.dart';
 
 class Album extends StatelessWidget {
   const Album({
@@ -14,52 +15,61 @@ class Album extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(0),
-      child: Row(
-        children: [
-          ClipRRect(
-
-            child: Image.network(
-              albumImage,
-              width: 55,
-              height: 55,
-              fit: BoxFit.cover,
-            ),
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => SpotifyAlbumView(),
           ),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  albumName,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
+        );
+      },
+      child: Padding(
+        padding: const EdgeInsets.all(0),
+        child: Row(
+          children: [
+            ClipRRect(
+              child: Image.network(
+                albumImage,
+                width: 55,
+                height: 55,
+                fit: BoxFit.cover,
+              ),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    albumName,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                Text(
-                  'Album - $artistName',
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 16,
+                  Text(
+                    'Album - $artistName',
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 16,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          IconButton(
-            icon: const Icon(
-              Icons.close,
-              color: Colors.grey,
+            IconButton(
+              icon: const Icon(
+                Icons.close,
+                color: Colors.grey,
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              },
             ),
-            onPressed: () {
-              Navigator.pop(context);
-            },
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
