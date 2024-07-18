@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_spotify/constants/const.dart';
-import 'package:flutter_spotify/view/album_view/appbar/custom_flexible_space.dart';
-import 'package:flutter_spotify/view/album_view/appbar/fixed_appbar.dart';
-import 'package:flutter_spotify/view/album_view/appbar/silver_appbar_delegate.dart';
+import 'package:flutter_spotify/screens/album_view/appbar/custom_flexible_space.dart';
+import 'package:flutter_spotify/screens/album_view/appbar/fixed_appbar.dart';
+import 'package:flutter_spotify/screens/album_view/appbar/silver_appbar_delegate.dart';
 
 class SliverCustomeAppBar extends StatelessWidget {
   const SliverCustomeAppBar({

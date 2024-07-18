@@ -1,10 +1,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spotify/constants/const.dart';
-import 'package:flutter_spotify/view/album_view/appbar/silver_custom_appbar.dart';
-import 'package:flutter_spotify/view/album_view/album_info.dart';
-import 'package:flutter_spotify/view/album_view/album_songs_list.dart';
-import 'package:flutter_spotify/view/album_view/play_pause_button.dart';
+import 'package:flutter_spotify/screens/album_view/appbar/silver_custom_appbar.dart';
+import 'package:flutter_spotify/screens/album_view/album_info.dart';
+import 'package:flutter_spotify/screens/album_view/album_songs_list.dart';
+import 'package:flutter_spotify/screens/album_view/play_pause_button.dart';
 
 class SpotifyAlbumView extends StatefulWidget {
   const SpotifyAlbumView({Key? key}) : super(key: key);

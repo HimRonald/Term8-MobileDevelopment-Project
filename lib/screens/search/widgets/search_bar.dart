@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify/view/search/search_history.dart';
+import 'package:flutter_spotify/screens/search/search_history.dart';
 
 class SearchInput extends StatelessWidget {
   const SearchInput({

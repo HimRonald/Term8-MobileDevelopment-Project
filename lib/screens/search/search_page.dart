@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify/view/search/widgets/search_bar.dart';
-import 'package:flutter_spotify/view/search/widgets/browse.dart';
-import 'package:flutter_spotify/view/search/widgets/genre.dart'; // Check if this is necessary
+import 'package:flutter_spotify/screens/search/widgets/search_bar.dart';
+import 'package:flutter_spotify/screens/search/widgets/browse.dart';
+import 'package:flutter_spotify/screens/search/widgets/genre.dart'; // Check if this is necessary
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify/view/search/widgets/artist.dart';
-import 'package:flutter_spotify/view/search/widgets/album.dart';
-import 'package:flutter_spotify/view/search/widgets/playlist.dart';
-import 'package:flutter_spotify/view/search/widgets/song.dart';
+import 'package:flutter_spotify/screens/search/widgets/artist.dart';
+import 'package:flutter_spotify/screens/search/widgets/album.dart';
+import 'package:flutter_spotify/screens/search/widgets/playlist.dart';
+import 'package:flutter_spotify/screens/search/widgets/song.dart';
 
 class SearchHistoryWrapper extends StatefulWidget {
   const SearchHistoryWrapper({Key? key}) : super(key: key);

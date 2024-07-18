@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify/view/album_view/album_view.dart';
+import 'package:flutter_spotify/screens/album_view/album_view.dart';
 
 class Album extends StatelessWidget {
   const Album({
