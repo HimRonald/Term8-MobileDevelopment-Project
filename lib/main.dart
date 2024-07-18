@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spotify/main_screen.dart';
+import 'package:flutter_spotify/screens/home/home_screen.dart';
 import 'package:flutter_spotify/view/search/search_page.dart';
 import 'package:flutter_spotify/view/tab/player/player_screen.dart';
 import 'package:flutter_spotify/view/tab/player/widgets/splash.dart';
@@ -16,12 +18,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Spotify',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Splash(),
+      home: MainScreen(),
     );
   }
 }
