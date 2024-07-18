@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify/view/tab/player/player_screen.dart';
+import 'package:flutter_spotify/screens/player/player_screen.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_spotify/view/tab/premium/widgets/premium_duo.dart';
-import 'package:flutter_spotify/view/tab/premium/widgets/premium_individual.dart';
-import 'package:flutter_spotify/view/tab/premium/widgets/premium_student.dart';
-import 'package:flutter_spotify/view/tab/premium/widgets/premium_title.dart';
-import 'package:flutter_spotify/view/tab/premium/widgets/premium_why.dart';
+import 'package:flutter_spotify/screens/premium/widgets/premium_duo.dart';
+import 'package:flutter_spotify/screens/premium/widgets/premium_individual.dart';
+import 'package:flutter_spotify/screens/premium/widgets/premium_student.dart';
+import 'package:flutter_spotify/screens/premium/widgets/premium_title.dart';
+import 'package:flutter_spotify/screens/premium/widgets/premium_why.dart';
 
 class PremiumScreen extends StatefulWidget {
   const PremiumScreen({super.key});

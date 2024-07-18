@@ -2,8 +2,8 @@ import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spotify/constants/colors.dart';
 import 'package:flutter_spotify/constants/music_model.dart';
-import 'package:flutter_spotify/view/tab/player/widgets/splash.dart';
-import 'package:flutter_spotify/view/tab/premium/premium_screen.dart';
+import 'package:flutter_spotify/screens/player/widgets/splash.dart';
+import 'package:flutter_spotify/screens/premium/premium_screen.dart';
 
 class PlayerScreen extends StatefulWidget {
   const PlayerScreen({super.key});

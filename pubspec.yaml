@@ -68,6 +68,7 @@ flutter:
     - assets/
     - assets/images/
     - assets/icons/
+    - assets/logo/
 
   fonts:
     # - family: spotifyfont

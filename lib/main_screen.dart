@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spotify/screens/home/home_screen.dart';
 import 'package:flutter_spotify/screens/library/library_screen.dart';
 import 'package:flutter_spotify/screens/search/search_page.dart';
+import 'package:flutter_spotify/screens/premium/premium_screen.dart';
 import 'package:flutter_spotify/widgets/bottom_navbar.dart';
 
 class MainScreen extends StatefulWidget {
@@ -34,6 +35,7 @@ class _MainScreenState extends State<MainScreen> {
           HomeScreen(),
           SearchPage(),
           LibraryScreen(),
+          PremiumScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavBar(

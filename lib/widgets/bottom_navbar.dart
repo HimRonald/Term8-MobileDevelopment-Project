@@ -15,6 +15,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       backgroundColor: const Color(0xFF000000),
+      type: BottomNavigationBarType.fixed,
       selectedItemColor: Colors.white,
       unselectedItemColor: const Color(0xFFB7B7B7),
       selectedLabelStyle: const TextStyle(
@@ -51,6 +52,14 @@ class BottomNavBar extends StatelessWidget {
                 width: 28, height: 28),
           ),
           label: 'Your Library',
+        ),
+        BottomNavigationBarItem(
+          icon: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SvgPicture.asset("assets/icons/SpotifyIcon.svg",
+                width: 28, height: 28),
+          ),
+          label: 'Premium',
         ),
       ],
     );
