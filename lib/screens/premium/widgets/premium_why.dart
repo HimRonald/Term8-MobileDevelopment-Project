@@ -28,6 +28,7 @@ class PremiumWhy extends StatelessWidget {
                         fontSize: 25,
                         color: ColorConstants.primaryColor,
                         fontWeight: FontWeight.w700,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -39,6 +40,7 @@ class PremiumWhy extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -50,6 +52,7 @@ class PremiumWhy extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -61,6 +64,7 @@ class PremiumWhy extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -72,6 +76,7 @@ class PremiumWhy extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -83,6 +88,7 @@ class PremiumWhy extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -94,6 +100,7 @@ class PremiumWhy extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w300,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
         

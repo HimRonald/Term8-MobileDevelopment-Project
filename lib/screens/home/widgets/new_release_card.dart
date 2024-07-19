@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spotify/screens/player/player_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class NewReleaseCard extends StatelessWidget {
@@ -110,7 +111,14 @@ class NewReleaseCard extends StatelessWidget {
                           IconButton(
                             icon: SvgPicture.asset("assets/icons/Play.svg",
                                 width: 35, height: 35),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => PlayerScreen(),
+                                ),
+                              );
+                            },
                           ),
                         ],
                       ),

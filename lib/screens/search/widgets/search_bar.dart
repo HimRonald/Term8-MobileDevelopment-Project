@@ -8,13 +8,14 @@ class SearchInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return GestureDetector(
       onTap: () {
         // Navigate to another page
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const SearchHistoryWrapper()), // Replace SearchPage with your target page
+          MaterialPageRoute(
+              builder: (context) =>
+                  const SearchHistoryWrapper()), // Replace SearchPage with your target page
         );
       },
       child: AbsorbPointer(
@@ -31,12 +32,14 @@ class SearchInput extends StatelessWidget {
             hintStyle: TextStyle(
               color: Colors.grey[600], // Hint text color remains grey
               fontSize: 18,
+              fontFamily: 'spotifyfont',
             ),
             prefixIcon: Icon(
               Icons.search,
               color: !FocusScope.of(context).isFirstFocus
                   ? Colors.black
-                  : Colors.green[300], // Change icon color to black when not focused
+                  : Colors.green[
+                      300], // Change icon color to black when not focused
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),

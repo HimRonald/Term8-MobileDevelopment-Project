@@ -45,7 +45,7 @@ class GenreCard extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
@@ -65,6 +65,7 @@ class GenreCard extends StatelessWidget {
                 color: Colors.white,
                 fontSize: 20,
                 fontWeight: FontWeight.w700,
+                fontFamily: 'spotifyfont',
               ),
             ),
           ),

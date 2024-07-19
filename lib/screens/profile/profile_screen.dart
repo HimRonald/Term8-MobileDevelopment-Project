@@ -1,19 +1,5 @@
 import 'package:flutter/material.dart';
 
-class Profile_Screen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Profile Screen',
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.blue,
-      ),
-      home: ProfileScreen(),
-    );
-  }
-}
-
 class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,10 +7,15 @@ class ProfileScreen extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-            height: MediaQuery.of(context).size.height, 
+            height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [Colors.green, Colors.black, Colors.black, Colors.black], 
+                colors: [
+                  Colors.green,
+                  Colors.black,
+                  Colors.black,
+                  Colors.black
+                ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),
@@ -46,16 +37,31 @@ class ProfileScreen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 20),
-                  CircleAvatar(
-                    radius: 50,
-                    backgroundImage: AssetImage('assets/images/profile_picture.jpg'), 
+                  Container(
+                    width: 100,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF62E58C),
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'M',
+                        style: TextStyle(
+                          color: Color(0xFF000100),
+                          fontSize: 36,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
                   ),
                   SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {},
                     child: Text('Edit Profile'),
                     style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.black, backgroundColor: Colors.white, // Text color
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white, // Text color
                     ),
                   ),
                   SizedBox(height: 20),
@@ -85,7 +91,8 @@ class ProfileScreen extends StatelessWidget {
       children: [
         Text(
           count,
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
+          style: TextStyle(
+              fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         Text(
           label,
@@ -98,12 +105,13 @@ class ProfileScreen extends StatelessWidget {
   Widget _buildPlaylists() {
     return Column(
       children: [
-        _buildPlaylistItem('My Playlist #1','assets/images/playlist1.PNG', 7),
-        _buildPlaylistItem('My Playlist #2','assets/images/playlist2.PNG', 4),
-        _buildPlaylistItem('My Playlist #3','assets/images/playlist3.PNG', 5),
+        _buildPlaylistItem('My Playlist #1', 'assets/images/playlist1.PNG', 7),
+        _buildPlaylistItem('My Playlist #2', 'assets/images/playlist2.PNG', 4),
+        _buildPlaylistItem('My Playlist #3', 'assets/images/playlist3.PNG', 5),
         TextButton(
           onPressed: () {},
-          child: Text('See all playlists', style: TextStyle(color: Colors.white)),
+          child:
+              Text('See all playlists', style: TextStyle(color: Colors.white)),
         ),
       ],
     );

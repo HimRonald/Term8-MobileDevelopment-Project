@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spotify/screens/album_view/album_view.dart';
 import 'album_card.dart';
 
 class AlbumList extends StatelessWidget {
@@ -21,9 +22,9 @@ class AlbumList extends StatelessWidget {
       },
       {
         'image': 'assets/images/album3.jpeg',
-        'title': 'Rockstar',
-        'albumType': 'Single',
-        'artist': 'LISA',
+        'title': 'Everything I Know About Love',
+        'albumType': 'Album',
+        'artist': 'Laufey',
       },
       {
         'image': 'assets/images/album4.jpeg',
@@ -78,11 +79,21 @@ class AlbumList extends StatelessWidget {
           itemBuilder: (context, index) {
             return Padding(
               padding: const EdgeInsets.only(bottom: 16),
-              child: AlbumCard(
-                image: items[index]['image']!,
-                title: items[index]['title']!,
-                albumType: items[index]['albumType']!,
-                artist: items[index]['artist']!,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const SpotifyAlbumView(),
+                    ),
+                  );
+                },
+                child: AlbumCard(
+                  image: items[index]['image']!,
+                  title: items[index]['title']!,
+                  albumType: items[index]['albumType']!,
+                  artist: items[index]['artist']!,
+                ),
               ),
             );
           },

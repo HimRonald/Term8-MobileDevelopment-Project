@@ -27,6 +27,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 25,
                         color: Color.fromARGB(255, 187, 136, 196),
                         fontWeight: FontWeight.w700,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -38,6 +39,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -49,6 +51,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -60,6 +63,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -71,6 +75,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -82,6 +87,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -93,6 +99,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                     SizedBox(
@@ -104,6 +111,7 @@ class PremiumIndividual extends StatelessWidget {
                         fontSize: 20,
                         color: Colors.white,
                         fontWeight: FontWeight.w500,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
                   ],

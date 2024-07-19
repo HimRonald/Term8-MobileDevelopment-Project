@@ -45,7 +45,7 @@ class SearchHistory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: const Color(0xFF121212),
       appBar: _buildSearchAppBar(context),
       body: _buildHistoryList(),
     );
@@ -70,6 +70,7 @@ class SearchHistory extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.grey[300], // Lighter gray text color
                       fontSize: 18,
+                      fontFamily: 'spotifyfont',
                     ),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.symmetric(vertical: 10),
@@ -78,6 +79,7 @@ class SearchHistory extends StatelessWidget {
                       hintStyle: TextStyle(
                         color: Colors.grey[500], // Lighter gray hint text
                         fontSize: 18,
+                        fontFamily: 'spotifyfont',
                       ),
                       prefixIcon: GestureDetector(
                         onTap: () {
@@ -113,6 +115,7 @@ class SearchHistory extends StatelessWidget {
               color: Colors.white,
               fontSize: 20,
               fontWeight: FontWeight.bold,
+              fontFamily: 'spotifyfont',
             ),
           ),
           const SizedBox(height: 16),

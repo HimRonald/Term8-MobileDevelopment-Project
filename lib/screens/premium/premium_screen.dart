@@ -15,10 +15,10 @@ class PremiumScreen extends StatefulWidget {
 class _PremiumScreenState extends State<PremiumScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+        padding: EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
@@ -38,6 +38,7 @@ class _PremiumScreenState extends State<PremiumScreen> {
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
                 height: 1.2,
+                fontFamily: 'spotifyfont',
               ),
             ),
             SizedBox(
@@ -50,6 +51,7 @@ class _PremiumScreenState extends State<PremiumScreen> {
                 color: Colors.white,
                 fontWeight: FontWeight.w500,
                 height: 1.2,
+                fontFamily: 'spotifyfont',
               ),
             ),
             SizedBox(

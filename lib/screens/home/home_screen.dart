@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF121212),
+      backgroundColor: const Color(0xFF121212),
       body: _buildBody(),
     );
   }
@@ -34,7 +34,7 @@ class HomeScreen extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 25),
+        const SizedBox(height: 32),
         const NaviBar(),
         
         const SizedBox(height: 25),

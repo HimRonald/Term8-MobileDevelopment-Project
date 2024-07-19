@@ -15,10 +15,9 @@ class PlayerScreen extends StatefulWidget {
 class _PlayerScreenState extends State<PlayerScreen> {
   List<MusicModel> songs = [
     MusicModel(
-        songName: "Yakayo",
-        artist: "Kwan",
-        cover:
-            'https://cdns-images.dzcdn.net/images/cover/fb6ff7c5d9e5b77eaa7cd01c3ffa429e/1900x1900-000000-80-0-0.jpg',
+        songName: "Say",
+        artist: "keshi",
+        cover: 'assets/images/new_release_single.jpeg',
         path: ''),
   ];
   int currentSong = 0;
@@ -30,34 +29,31 @@ class _PlayerScreenState extends State<PlayerScreen> {
         backgroundColor: Colors.black,
         title: const Text(
           'Now Playing',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontFamily: 'spotifyfont',
+            fontSize: 20,
+          ),
         ),
         centerTitle: true,
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.white),
-          onPressed: () {
-          Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => Splash()),
-  ); // Pop current screen off the navigation stack
-    },
-  ),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft, 
-            end: Alignment.bottomRight,
-            stops: [0.5,10.5],
-            colors: [
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                stops: [
+              0.5,
+              10.5
+            ],
+                colors: [
               Colors.black,
               ColorConstants.primaryColor,
-            ]
-          )
-        ),
+            ])),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -70,9 +66,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                 height: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(
-                        songs[currentSong].cover,
-                    ),
+                    image: AssetImage(songs[currentSong].cover),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -82,21 +76,22 @@ class _PlayerScreenState extends State<PlayerScreen> {
               height: 20,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween, // Aligns the Row's children in the center
+              mainAxisAlignment: MainAxisAlignment
+                  .spaceBetween, // Aligns the Row's children in the center
               children: [
                 Text(
                   songs[currentSong].songName,
                   style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                    fontSize: 30,
+                    fontWeight: FontWeight.w500,
                   ),
-              ),               
-               Icon(
+                ),
+                Icon(
                   Icons.favorite_border, // Heart outline icon
                   color: Colors.white,
                   size: 30,
-              ),
+                ),
               ],
             ),
             Text(
@@ -140,21 +135,22 @@ class _PlayerScreenState extends State<PlayerScreen> {
                       size: 40,
                     )),
                 IconButton(
-                    onPressed: () {
-                      setState(() {
+                  onPressed: () {
+                    setState(() {
                       isPlaying = !isPlaying; // Step 3: Toggle play state
                     });
-                    },
-                    icon: Icon(
-                    isPlaying ? Icons.pause_circle : Icons.play_arrow, // Step 2: Decide which icon to display
-                      color: Colors.white,
-                      size: 50,
-                    ),
+                  },
+                  icon: Icon(
+                    isPlaying
+                        ? Icons.pause_circle
+                        : Icons
+                            .play_arrow, // Step 2: Decide which icon to display
+                    color: Colors.white,
+                    size: 50,
                   ),
+                ),
                 IconButton(
-                    onPressed: () {
-                
-                    },
+                    onPressed: () {},
                     icon: Icon(
                       Icons.skip_next,
                       color: Colors.white,

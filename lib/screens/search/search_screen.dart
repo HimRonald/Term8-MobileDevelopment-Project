@@ -20,18 +20,19 @@ class SearchPage extends StatelessWidget {
               pinned: true,
               snap: false,
               expandedHeight: 140,
-              flexibleSpace: FlexibleSpaceBar(
+              flexibleSpace: const FlexibleSpaceBar(
                 collapseMode: CollapseMode.parallax,
                 background: Stack(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 16.0, top: 42.0),
+                      padding: EdgeInsets.only(left: 16.0, top: 42.0),
                       child: Text(
                         'Search',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 32,
                           fontWeight: FontWeight.w700,
+                          fontFamily: 'spotifyfont',
                         ),
                       ),
                     )
@@ -42,7 +43,7 @@ class SearchPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 16.0),
                   child: IconButton(
-                    icon: Icon(Icons.camera_alt_outlined,
+                    icon: const Icon(Icons.camera_alt_outlined,
                         size: 28, color: Colors.white),
                     onPressed: () {
                       // Add your onPressed action here
@@ -50,13 +51,13 @@ class SearchPage extends StatelessWidget {
                   ),
                 ),
               ],
-              bottom: PreferredSize(
-                preferredSize: const Size.fromHeight(80),
+              bottom: const PreferredSize(
+                preferredSize: Size.fromHeight(80),
                 child: Padding(
-                  padding: const EdgeInsets.only(
+                  padding: EdgeInsets.only(
                       bottom: 16.0), // Add bottom padding here
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
                     child: SearchInput(), // Include SearchInput widget here
                   ),
                 ),
@@ -65,27 +66,28 @@ class SearchPage extends StatelessWidget {
             SliverToBoxAdapter(
               child: Container(
                 padding: const EdgeInsets.all(16),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       height: 16,
                     ),
-                    const Text(
+                    Text(
                       'Browse All',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 10,
                     ),
                     Wrap(
                       spacing: 12,
                       runSpacing: 12,
-                      children: const [
+                      children: [
                         BrowseCard(
                             title: 'Made For You',
                             color1: '#E02FCF',
@@ -104,24 +106,25 @@ class SearchPage extends StatelessWidget {
                             color2: '#DD1010'),
                       ],
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 24,
                     ),
-                    const Text(
+                    Text(
                       'Explore Genres',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
+                        fontFamily: 'spotifyfont',
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 10,
                     ),
                     Wrap(
                       spacing: 12,
                       runSpacing: 12,
-                      children: const [
+                      children: [
                         GenreCard(
                             title: 'Pop',
                             color: Colors.pink,

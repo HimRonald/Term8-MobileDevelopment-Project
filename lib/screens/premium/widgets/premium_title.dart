@@ -21,12 +21,15 @@ class PremiumTitle extends StatelessWidget {
             height: 25,
           ),
         ),
-        Text(title,
+        Text(
+          title,
           style: const TextStyle(
-              color: Colors.white,
-              fontSize: 25,
-              fontWeight: FontWeight.w700,
-              fontStyle: FontStyle.normal)
+            color: Colors.white,
+            fontSize: 25,
+            fontWeight: FontWeight.w700,
+            fontStyle: FontStyle.normal,
+            fontFamily: 'spotifyfont',
+          ),
         ),
       ],
     );

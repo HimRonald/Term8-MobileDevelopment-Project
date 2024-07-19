@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
 
-class SettingsApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Settings Screen',
-      theme: ThemeData.dark(), // Use dark theme
-      home: SettingsScreen(),
-    );
-  }
-}
-
 class SettingsScreen extends StatelessWidget {
   final List<String> settings = [
     'Account',
@@ -32,42 +21,48 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF121212),
       appBar: AppBar(
-        title: Row(
+        backgroundColor: const Color(0xFF121212),
+        title: const Row(
           children: [
-            IconButton(
-              icon: Icon(Icons.arrow_back),
-              onPressed: () {
-                // Handle back button press
-              },
-            ),
             Expanded(
               child: Center(
-                child: Text('Settings'),
+                child: Text(
+                  'Settings',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'spotifyfont',
+                  ),
+                ),
               ),
             ),
-            SizedBox(width: 48), // Add a dummy space to balance the layout
+            SizedBox(width: 48),
           ],
         ),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: ListView.builder(
         itemCount: settings.length + 1,
         itemBuilder: (context, index) {
           if (index < settings.length) {
             return ListTile(
-              title: Text(settings[index]),
-              onTap: () {
-                // Handle tap if needed
-              },
+              title: Text(
+                settings[index],
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontFamily: 'spotifyfont',
+                ),
+              ),
+              onTap: () {},
             );
           } else {
             return Padding(
               padding:
                   const EdgeInsets.symmetric(vertical: 10.0, horizontal: 150.0),
               child: ElevatedButton(
-                onPressed: () {
-                  // Handle logout button press
-                },
+                onPressed: () {},
                 child: Text('Log out'),
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.black,

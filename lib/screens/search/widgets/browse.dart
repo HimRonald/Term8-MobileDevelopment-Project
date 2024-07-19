@@ -3,13 +3,15 @@ import 'package:flutter_spotify/constants/colors.dart';
 
 class BrowseCard extends StatelessWidget {
   const BrowseCard({
-    Key? key, required this.title, required this.color1, required this.color2,
+    Key? key,
+    required this.title,
+    required this.color1,
+    required this.color2,
   }) : super(key: key);
 
   final String title;
   final String color1;
   final String color2;
-
 
   @override
   Widget build(BuildContext context) {
@@ -20,19 +22,18 @@ class BrowseCard extends StatelessWidget {
       height: 100,
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 20),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(5),
-        gradient: LinearGradient(
-          colors: [
+          borderRadius: BorderRadius.circular(5),
+          gradient: LinearGradient(colors: [
             hexToColor(color1),
             hexToColor(color2),
-          ]
-        )
-      ),
-      child: Text(title, style: const TextStyle(
-        color: Colors.white,
-        fontSize: 16,
-        fontWeight: FontWeight.w700
-      )),
+          ])),
+      child: Text(title,
+          style: const TextStyle(
+            color: Colors.white,
+            fontSize: 16,
+            fontWeight: FontWeight.w700,
+            fontFamily: 'spotifyfont',
+          )),
     );
   }
 }
